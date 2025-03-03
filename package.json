@@ -1,0 +1,36 @@
+{
+  "name": "reality-chat-app",
+  "version": "1.0.0",
+  "description": "Reality Chat App for Desktop",
+  "author": "Quiche",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "build": "electron-builder --mac --win"
+  },
+  "build": {
+    "appId": "com.example.realitychat",
+    "productName": "Reality Chat App",
+    "mac": {
+      "icon": "assets/icon.icns"
+    },
+    "win": {
+      "icon": "assets/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^34.3.0"
+  },
+  "dependencies": {
+    "@szmarczak/http-timer": "^5.0.1",
+    "electron-squirrel-startup": "^1.0.1",
+    "got": "^14.4.6",
+    "ws": "^8.18.1"
+  }
+}
